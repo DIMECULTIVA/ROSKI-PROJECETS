@@ -1,0 +1,407 @@
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* HAMBURGER MENU (Hidden on Desktop) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+        .nav-links a:hover {
+            color: #0056b3; /* ROSKI BLUE */
+        }
+
+.cta-btn {
+    background: #0056b3; /* ROSKI BLUE */
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .cta-btn:hover {
+        background: #004494; /* Darker Blue on Hover */
+    }
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    filter: brightness(0.4); /* Slightly darker for better text readability */
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #0056b3; /* ROSKI BLUE */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: 2px solid #0056b3;
+}
+
+    .hero-btn:hover {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+    }
+
+/* SECTIONS */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f4f6f8; /* Slightly cool gray */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #222;
+    position: relative;
+    display: inline-block;
+}
+
+    /* Underline effect for headings */
+    h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: #0056b3; /* ROSKI BLUE */
+        margin: 10px auto 0;
+    }
+
+/* TEAM */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #0056b3; /* ROSKI BLUE */
+}
+
+.role {
+    color: #666;
+    font-weight: bold;
+}
+
+/* SERVICES */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-bottom: 4px solid transparent;
+    transition: 0.3s;
+}
+
+    .service-card:hover {
+        border-bottom: 4px solid #0056b3; /* Blue underline on hover */
+        transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+        color: #0056b3; /* ROSKI BLUE */
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+/* PROCESS */
+.process-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.step {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    text-align: center;
+    padding: 20px;
+}
+
+.step-number {
+    font-size: 50px;
+    font-weight: 900;
+    color: #e0e0e0; /* Subtle grey number */
+    margin-bottom: -25px;
+    position: relative;
+    z-index: -1;
+}
+
+.step h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* PORTFOLIO */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+    .project-card:hover {
+        transform: scale(1.02);
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+    .project-info h3 {
+        color: #222;
+        font-size: 18px;
+    }
+
+    .project-info p {
+        color: #0056b3; /* ROSKI BLUE */
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+/* TESTIMONIAL SLIDER */
+.testimonial-slider {
+    position: relative;
+    height: 200px;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background: #fff;
+    padding: 40px;
+    border-left: 5px solid #0056b3; /* ROSKI BLUE */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+    .testimonial-slide.active {
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .testimonial-slide p {
+        font-size: 18px;
+        font-style: italic;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+/* CONTACT */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+    .dark-mode h2 {
+        color: white;
+    }
+
+        .dark-mode h2::after {
+            background: white;
+        }
+
+.email-text {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+    .email-text a {
+        color: #4da6ff; /* Lighter blue for dark background links */
+        text-decoration: none;
+    }
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: #777;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 3px solid #0056b3;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+    .social-icons a {
+        color: white;
+        font-size: 24px;
+        margin: 0 15px;
+        transition: 0.3s;
+    }
+
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+
+/* RESPONSIVE (MOBILE) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+        .nav-links.active {
+            max-height: 400px;
+            padding: 20px 0;
+        }
+
+        .nav-links li {
+            margin: 15px 0;
+            width: 100%;
+        }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .testimonial-slider {
+        height: 350px;
+    }
+}

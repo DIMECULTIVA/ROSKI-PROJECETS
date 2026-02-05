@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roski Projects | Architecture & Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ROSKI PROJECTS</div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li><a href="#process" onclick="closeMenu()">Process</a></li>
+            <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            <li><a href="https://wa.me/27000000000" class="cta-btn">Get a Quote</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <video autoplay muted loop id="bg-video">
+            <source src="background.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Vision. Design. Build.</h1>
+            <p>Your turnkey partner for architectural design and construction management.</p>
+            <a href="#contact" class="hero-btn">Start Your Project</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <p>Roski Projects is a multidisciplinary architectural firm dedicated to delivering excellence. Unlike traditional firms, we bridge the gap between design and construction, ensuring that your vision is executed perfectly from the first sketch to the final brick.</p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/200" alt="Director" class="team-img">
+                    <h3>Director</h3>
+                    <p class="role">Lead Architect & Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2>What We Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Architecture</h3>
+                    <p>Modern residential and commercial designs tailored to your site and budget.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Project Management</h3>
+                    <p>We oversee the entire build process, managing contractors, timelines, and costs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Turnkey Solutions</h3>
+                    <p>A complete package: We design it, get it approved, and help you build it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section">
+        <div class="container">
+            <h2>Our Process</h2>
+            <div class="process-grid">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Brief</h3>
+                    <p>We discuss your needs, budget, and project scope.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Concept</h3>
+                    <p>We produce 3D designs and floor plans for your review.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Approval</h3>
+                    <p>We handle all municipal council submissions.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <h3>Execution</h3>
+                    <p>We manage the project on-site to ensure quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section bg-light">
+        <div class="container">
+            <h2>Recent Projects</h2>
+            <p class="subtitle">Showcasing our latest design and build work.</p>
+            <div class="portfolio-grid">
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern Home">
+                    <div class="project-info">
+                        <h3>Private Residence</h3>
+                        <p>Design & Build</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Commercial Building">
+                    <div class="project-info">
+                        <h3>Office Complex</h3>
+                        <p>Architectural Planning</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Renovation">
+                    <div class="project-info">
+                        <h3>Luxury Renovation</h3>
+                        <p>Interior & Exterior</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>Client Feedback</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <p>"Roski Projects made the building process so easy. Having the architect manage the project saved us so much stress."</p>
+                    <h4>- Client A. in Johannesburg</h4>
+                </div>
+                <div class="testimonial-slide">
+                    <p>"Professional service and incredible designs. They really understood our vision."</p>
+                    <h4>- Client B. in Pretoria</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section dark-mode">
+        <div class="container">
+            <h2>Let's Build Your Vision</h2>
+            <p>Contact us today for a consultation or site visit.</p>
+
+            <a href="https://wa.me/27000000000" class="hero-btn">Chat on WhatsApp</a>
+
+            <p class="email-text">
+                Email: <a href="mailto:info@roskiprojects.co.za">info@roskiprojects.co.za</a><br>
+                Phone: <a href="tel:+27000000000">076 000 0000</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 Roski Projects. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // SLIDER
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        function changeSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        setInterval(changeSlide, 5000);
+
+        // MOBILE MENU
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        function closeMenu() {
+            navLinks.classList.remove('active');
+        }
+    </script>
+
+</body>
+</html>
