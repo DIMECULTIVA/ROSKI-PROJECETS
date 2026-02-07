@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | ROSKI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ROSKI</div>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://wa.me/27000000000" style="color: var(--accent);">Get Quote</a></li>
+        </ul>
+    </nav>
+
+    <section class="section" style="padding-top: 150px;">
+        <div class="container" data-aos="fade-in">
+            <h2>Our Portfolio</h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 50px;">
+                A collection of our most recent architectural and construction milestones.
+            </p>
+
+            <div class="portfolio-grid">
+                <div class="card" data-aos="fade-up">
+                    <img src="site.jpg" alt="Project 1">
+                    <div class="card-content">
+                        <h3>Private Residence</h3>
+                        <p>Sandton</p>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="csite.jpg" alt="Project 2">
+                    <div class="card-content">
+                        <h3>Corporate HQ</h3>
+                        <p>Cape Town</p>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="isite.jpg" alt="Project 3">
+                    <div class="card-content">
+                        <h3>Interior Revamp</h3>
+                        <p>Pretoria</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="font-size: 12px; color: #555;">&copy; 2026 Roski Projects.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    </script>
+</body>
+</html>

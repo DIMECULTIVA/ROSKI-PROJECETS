@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ROSKI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Specific Styles for Contact Form */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .contact-info-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+            .contact-info-card:hover {
+                border-color: var(--accent);
+                transform: translateX(10px);
+            }
+
+            .contact-info-card i {
+                font-size: 24px;
+                color: var(--accent);
+                margin-bottom: 15px;
+                display: block;
+            }
+
+            .contact-info-card h4 {
+                color: #fff;
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .contact-info-card a {
+                color: var(--text-muted);
+                text-decoration: none;
+                font-size: 14px;
+                transition: 0.3s;
+            }
+
+                .contact-info-card a:hover {
+                    color: #fff;
+                }
+
+        /* Form Styling */
+        form input, form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            outline: none;
+            transition: 0.3s;
+        }
+
+            form input:focus, form textarea:focus {
+                border-color: var(--accent);
+                box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+            }
+
+        form button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+            form button:hover {
+                background: #0062cc;
+                box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+            }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ROSKI</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="https://wa.me/27000000000" style="color: var(--accent);">Get Quote</a></li>
+        </ul>
+    </nav>
+
+    <section class="section" style="padding-top: 150px; min-height: 80vh;">
+        <div class="container">
+            <h2 data-aos="fade-right">Start Your Project</h2>
+            <p style="color: var(--text-muted); margin-bottom: 40px;" data-aos="fade-in">
+                Ready to bring your vision to life? Contact our team for a consultation.
+            </p>
+
+            <div class="contact-grid">
+
+                <div class="contact-details" data-aos="fade-up">
+
+                    <div class="contact-info-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>Chat Instantly</h4>
+                        <a href="https://wa.me/27000000000" target="_blank">Start WhatsApp Chat &rarr;</a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email Us</h4>
+                        <a href="mailto:info@roskiprojects.co.za">info@roskiprojects.co.za</a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call Us</h4>
+                        <a href="tel:+27000000000">+27 00 000 0000</a>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <a href="#">Johannesburg, South Africa</a>
+                    </div>
+
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <form action="mailto:info@roskiprojects.co.za" method="post" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Project Type (e.g. Residential)" required>
+                        <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p style="margin-top: 20px; font-size: 12px; color: #555;">&copy; 2026 Roski Projects.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Mobile Menu Logic
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

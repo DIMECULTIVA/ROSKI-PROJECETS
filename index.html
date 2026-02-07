@@ -3,212 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roski Projects | Residential & Commercial Excellence</title>
+    <title>ROSKI PROJECTS | Future Built</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">ROSKI PROJECTS</div>
+        <div class="logo">ROSKI</div>
 
         <div class="menu-toggle" id="mobile-menu">
             <i class="fas fa-bars"></i>
         </div>
 
         <ul class="nav-links">
-            <li><a href="#about" onclick="closeMenu()">About</a></li>
-            <li><a href="#services" onclick="closeMenu()">Services</a></li>
-            <li><a href="#process" onclick="closeMenu()">Process</a></li>
-            <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
-            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-            <li><a href="https://wa.me/27000000000" class="cta-btn">Chat Now</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://wa.me/27000000000" style="color: var(--accent);">Get Quote</a></li>
         </ul>
     </nav>
 
     <header class="hero">
         <video autoplay muted loop id="bg-video">
-            <source src="Background.mp4" type="video/mp4">
+            <source src="background.mp4" type="video/mp4">
         </video>
-        <div class="hero-content">
-            <h1>Designing the Future, Building Your Vision</h1>
-            <p>Premium architectural services for residential and commercial projects.</p>
-            <a href="https://wa.me/27000000000" class="hero-btn">Start Your Project</a>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
+            <h1>VISION <br><span>EXECUTED.</span></h1>
+            <p>Next-generation architecture & construction management.</p>
+            <a href="projects.html" class="hero-btn">View Portfolio</a>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>Who We Are</h2>
-            <p>Roski Projects provides professional architectural services from concept design through to council submissions and construction documentation. Whether you are planning a new build, a luxury renovation, or a commercial development, we bring your vision to life.</p>
-
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="https://via.placeholder.com/200" alt="Lead Architect" class="team-img">
-                    <h3>Principal Architect</h3>
-                    <p class="role">Lead Architect (Pr.Arch)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="section bg-light">
-        <div class="container">
-            <h2>Our Services</h2>
+    <section class="section">
+        <div class="container" data-aos="fade-up">
+            <h2>The Roski Standard.</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <h3>Residential</h3>
-                    <p>New builds, extensions, and luxury renovations tailored to your lifestyle.</p>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-content">
+                        <h3><i class="fas fa-pen-ruler" style="color: var(--accent);"></i> Design</h3>
+                        <p>Futuristic residential & commercial concepts tailored to specific sites.</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <h3>Commercial</h3>
-                    <p>Office spaces, retail developments, and industrial planning.</p>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-content">
+                        <h3><i class="fas fa-layer-group" style="color: var(--accent);"></i> Manage</h3>
+                        <p>End-to-end project management ensuring timelines and budgets are met.</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <h3>Council & Approvals</h3>
-                    <p>Handling all submission processes and regulatory compliance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="process" class="section">
-        <div class="container">
-            <h2>How It Works</h2>
-            <div class="process-grid">
-                <div class="step">
-                    <div class="step-number">01</div>
-                    <h3>Consult</h3>
-                    <p>We meet to understand your vision, budget, and site requirements.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">02</div>
-                    <h3>Design</h3>
-                    <p>We create detailed 3D concepts and floor plans for your approval.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">03</div>
-                    <h3>Submit</h3>
-                    <p>We handle all council documentation and legal approvals.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">04</div>
-                    <h3>Build</h3>
-                    <p>We provide construction drawings and guide the builders to completion.</p>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-content">
+                        <h3><i class="fas fa-city" style="color: var(--accent);"></i> Build</h3>
+                        <p>Turnkey construction solutions from foundation to final handover.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="section bg-light">
+    <section class="section" style="background: #111;">
         <div class="container">
-            <h2>Featured Projects</h2>
-            <p class="subtitle">A selection of our recent residential and commercial work.</p>
+            <h2>Selected Works</h2>
             <div class="portfolio-grid">
-
-                <div class="project-card">
-                    <img src="site.jpg" alt="Luxury Residential">
-                    <div class="project-info">
-                        <h3>Luxury Residential</h3>
-                        <p>Sandton, JHB</p>
+                <div class="card" data-aos="fade-up">
+                    <img src="site.jpg" alt="Featured Project">
+                    <div class="card-content">
+                        <h3>Sandton Heights</h3>
+                        <p>Residential / Design & Build</p>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <img src="csite.jpg" alt="Commercial Office">
-                    <div class="project-info">
-                        <h3>Commercial Office</h3>
-                        <p>Cape Town CBD</p>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="csite.jpg" alt="Featured Project">
+                    <div class="card-content">
+                        <h3>Cape Town HQ</h3>
+                        <p>Commercial / Interior</p>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <img src="isite.jpg" alt="Interior Renovation">
-                    <div class="project-info">
-                        <h3>Interior Renovation</h3>
-                        <p>Pretoria East</p>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="section">
-        <div class="container">
-            <h2>What Clients Say</h2>
-            <div class="testimonial-slider">
-
-                <div class="testimonial-slide active">
-                    <p>"Roski Projects helped me visualize my dream home perfectly. The 3D renders were incredible and the council submission was painless."</p>
-                    <h4>- Sarah J. in Pretoria</h4>
-                </div>
-
-                <div class="testimonial-slide">
-                    <p>"Professional, punctual, and highly creative. They transformed our old office space into something modern and productive."</p>
-                    <h4>- Michael K. in Sandton</h4>
-                </div>
-
-                <div class="testimonial-slide">
-                    <p>"I was worried about municipal approvals, but the team handled everything. Highly recommended!"</p>
-                    <h4>- Thabo M. in Midrand</h4>
-                </div>
-
-                <div class="testimonial-slide">
-                    <p>"Great attention to detail. They listened to exactly what we wanted and delivered within budget."</p>
-                    <h4>- Emily R. in Centurion</h4>
-                </div>
-
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="projects.html" class="hero-btn">See All Projects</a>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section dark-mode">
-        <div class="container">
-            <h2>Ready to discuss your project?</h2>
-            <p>Our expert team is ready to qualify your needs and book a consultation instantly.</p>
-            <a href="https://wa.me/27000000000" class="hero-btn">Start Your Project</a>
-            <p class="email-text">Email us at: <a href="mailto:info@roskiprojects.co.za">info@roskiprojects.co.za</a></p>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-            </div>
-            <p>&copy; 2024 Roski Projects. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
+        <p style="margin-top: 20px; font-size: 12px; color: #555;">&copy; 2026 Roski Projects.</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // 1. TESTIMONIAL SLIDER
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.testimonial-slide');
+        AOS.init(); // Starts the animations
 
-        function changeSlide() {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-        setInterval(changeSlide, 5000);
-
-        // 2. MOBILE MENU TOGGLE
+        // Mobile Menu Logic
         const menuToggle = document.getElementById('mobile-menu');
         const navLinks = document.querySelector('.nav-links');
-
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
-
-        // Close menu when a link is clicked
-        function closeMenu() {
-            navLinks.classList.remove('active');
-        }
     </script>
 
 </body>
-
 </html>
