@@ -25,16 +25,12 @@
     <section class="section" style="padding-top: 150px;">
         <div class="container" data-aos="fade-in">
             <h2>Our Portfolio</h2>
-            <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 50px;">
-                A collection of our most recent architectural and construction milestones.
-            </p>
-
             <div class="portfolio-grid">
                 <div class="card" data-aos="fade-up">
                     <img src="site.jpg" alt="Project 1">
                     <div class="card-content">
                         <h3>Private Residence</h3>
-                        <p>Sandton</p>
+                        <p>Sandton / Modern Residential</p>
                     </div>
                 </div>
 
@@ -42,7 +38,7 @@
                     <img src="csite.jpg" alt="Project 2">
                     <div class="card-content">
                         <h3>Corporate HQ</h3>
-                        <p>Cape Town</p>
+                        <p>Cape Town / Commercial</p>
                     </div>
                 </div>
 
@@ -50,10 +46,9 @@
                     <img src="isite.jpg" alt="Project 3">
                     <div class="card-content">
                         <h3>Interior Revamp</h3>
-                        <p>Pretoria</p>
+                        <p>Pretoria / Renovation</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -65,9 +60,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-        const menuToggle = document.getElementById('mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
-        menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+        document.getElementById('mobile-menu').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
     </script>
 </body>
 </html>
